@@ -9,5 +9,11 @@
 </head>
 <body>
 	<!-- TODO: add a form for the user to play the game -->
+	<form action="get">
+		<p class="word">Translate this word: <?= $game->chosenWord->word ?> </p>
+
+	<label for="translation">Translation in English:</label>	
+	<button for="type">submit</button>
+
 </body>
 </html>
