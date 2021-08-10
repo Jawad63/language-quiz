@@ -1,11 +1,16 @@
+
 <?php
 
-class Player
-{
-    // TODO: add name and score
-
-    public function __construct()
+    class Player
     {
-        // TODO: add 👤 automatically to their name
+        public string $name;
+        public int $score;
+
+        public function __construct(string $name = "👤", int $score)
+        {
+            $this->name = $name;
+            $this->score = $score;
+        }
     }
-}
+
+    $player = new Player($name, $score);
